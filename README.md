@@ -1,1 +1,1 @@
-# golang-arch-sample
+# Modelo de arquitetura para Golang
