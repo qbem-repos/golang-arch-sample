@@ -1,9 +1,1 @@
-```http
-POST https://mycrudapi.com/api/525c9257bc5f48d6acfd8231ad04d64f/users
-Content-Type: application/json
-```
-```http
-GET https://mycrudapi.com/api/525c9257bc5f48d6acfd8231ad04d64f/users
-Accept: application/json
-
-```
+Acesse o [Postman Docs](https://documenter.getpostman.com/view/18956878/2s8Yt1tASr#3421e4c5-6c5b-4fab-9bd6-daa7f0377d43)
