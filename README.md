@@ -20,7 +20,6 @@ This is an simples sample
       - [ ] main_test.go 
     - [ ] Repos
       - [ ] ProfessionalRepo
-        - [ ] 
     - [ ] UseCases
   - [ ] Schedules
     - [ ] Entities
@@ -30,13 +29,44 @@ This is an simples sample
 - [ ] Broadcast | ???
 
 
-## TODO: Ainda a definir
+## TODO: Visão geral do micro serviço
+```mermaid
+    sequenceDiagram
+    participant Service
+    participant Broker
+    participant Database
+
+    Note left of Service: Microservice
+    Service-->>Database: Save()
+    Service->>+Broker: Send an message
+    Note right of Broker: Topics and Queues
+```
+
+
+## TODO: Service
+```mermaid
+    sequenceDiagram
+    participant Service
+    participant API_EXTERNA
+    participant Database
+
+    Note left of Service: Microservice
+    Service-->>API_EXTERNA: Request data of the Professional
+    API_EXTERNA-->>Service: Response data of the Professional
+    Service->>+API_EXTERNA: Request data of the Shedule
+    API_EXTERNA-->>Service: Response data of the Shedule
+    Service->>+Broker: Send an message
+    Note right of Broker: Topics and Queues | PUB/SUB or SAGA???
+    
+
+```
+
+## Reference
 ```mermaid
     sequenceDiagram
     participant DeviceGSM
     participant Server
     participant Mobile
-
     Note left of DeviceGSM: DeviceGSM IoT
     DeviceGSM-->>Server: Socket Connection
     DeviceGSM->>+Server: Send []bytes
@@ -46,4 +76,3 @@ This is an simples sample
     Note right of Mobile: App Mobile solicitando alguma info.
     Server-->>DeviceGSM: Send command
 ```
-# READ ME
