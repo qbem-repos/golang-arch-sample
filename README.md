@@ -46,3 +46,4 @@ This is an simples sample
     Note right of Mobile: App Mobile solicitando alguma info.
     Server-->>DeviceGSM: Send command
 ```
+# READ ME
