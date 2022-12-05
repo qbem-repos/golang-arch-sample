@@ -1,3 +1,4 @@
 package consumer
 
-type FooConsumer interface{}
+type FooConsumer interface {
+}

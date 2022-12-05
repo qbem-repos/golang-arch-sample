@@ -1,3 +1,5 @@
 package entity
 
-type Foo struct{}
+type Foo struct {
+	Foo string
+}
