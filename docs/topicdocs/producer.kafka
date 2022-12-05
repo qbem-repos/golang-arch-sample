@@ -1,0 +1,7 @@
+###
+PRODUCER keyed-message
+topic: my-topic
+key: mykeyq
+record content
+
+###
